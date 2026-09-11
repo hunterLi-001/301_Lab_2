@@ -81,7 +81,7 @@ class CityRepository {
 @Composable
 fun CityRow (
     city: String,
-    selected: Boolean,
+    //selected: Boolean,
     onClick: () -> Unit
 ) {
     Text(
@@ -150,7 +150,7 @@ fun CityListScreen(
             items(cities) {city ->
                 CityRow(
                     city = city,
-                    selected = city == selectedCityName,
+                    //selected = city == selectedCityName,
                     onClick = {
                         selectedCityName = city
                     }
